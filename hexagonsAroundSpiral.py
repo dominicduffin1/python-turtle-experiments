@@ -2,7 +2,7 @@
 hideturtle()
 i = 0.5
 for x in range(36):
-    pen(pencolor="#883300", pensize=2)
+    pen(pencolor="#003388", pensize=2)
     for y in range(60):
         right(1)
         forward(i)
