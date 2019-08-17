@@ -1,4 +1,5 @@
 from turtle import *
+from random import *
 
 #This program is WIP
 
@@ -40,4 +41,10 @@ def yellowZigZag(l):
         left(143)
         forward(12)
 
-    
+hideturtle()
+for lines in range(50):
+    redWave(randint(1,6))
+    blueStraightLine(randint(1,200))
+    right(randint(30,270))
+    greenDiamond(randint(1,50))
+    yellowZigZag(randint(1,10))
