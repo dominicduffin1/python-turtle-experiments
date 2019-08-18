@@ -3,9 +3,9 @@ from random import *
 
 #This program is WIP
 
-def redWave(l):
-    "Draws a red wave. Args: Number of iterations of wave."
-    pencolor("#ff0000")
+def pinkWave(l):
+    "Draws a pink wave. Args: Number of iterations of wave."
+    pencolor("#ff00cc")
     for waves in range(l):
         for turns in range(180):
             forward(0.1)
@@ -14,15 +14,15 @@ def redWave(l):
             forward(0.1)
             left(1)
 
-def blueStraightLine(l):
-    "Draws a blue straight line. Args: Length of line."
-    pencolor("#0000ff")
+def purpleStraightLine(l):
+    "Draws a purple straight line. Args: Length of line."
+    pencolor("#cc00ff")
     for pixels in range(l):
         forward(1)
 
-def greenDiamond(s):
-    "Draws a green diamond. Args: Size of diamond, s=length of one side."
-    pencolor("#00ff00")
+def turquoiseDiamond(s):
+    "Draws a turquoise diamond. Args: Size of diamond, s=length of one side."
+    pencolor("#00ccff")
     forward(s)
     right(150)
     forward(s)
@@ -31,9 +31,9 @@ def greenDiamond(s):
     right(150)
     forward(s)
 
-def yellowZigZag(l):
-    "Draws a yellow zigzag. Args: Number of iterations of zigzag."
-    pencolor("#ffff00") #Color untested
+def blackZigZag(l):
+    "Draws a black zigzag. Args: Number of iterations of zigzag."
+    pencolor("#000000") #Color untested
     for zees in range(l):
         forward(12)
         right(143) #Approx sin^-1 (9/15)
@@ -43,8 +43,8 @@ def yellowZigZag(l):
 
 hideturtle()
 for lines in range(50):
-    redWave(randint(1,6))
-    blueStraightLine(randint(1,200))
+    pinkWave(randint(1,6))
+    purpleStraightLine(randint(1,200))
     right(randint(30,270))
-    greenDiamond(randint(1,50))
-    yellowZigZag(randint(1,10))
+    turquoiseDiamond(randint(1,50))
+    blackZigZag(randint(1,10))
