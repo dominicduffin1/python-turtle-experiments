@@ -46,3 +46,4 @@ for lines in range(25):
     right(randint(30,270))
     turquoiseDiamond(randint(1,50))
     blackZigZag(randint(1,10))
+
