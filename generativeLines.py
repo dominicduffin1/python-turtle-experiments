@@ -1,10 +1,8 @@
 from turtle import *
 from random import *
 
-#This program is WIP
-
 def pinkWave(l):
-    "Draws a pink wave. Args: Number of iterations of wave."
+    """Draws a pink wave. Args: Number of iterations of wave."""
     pencolor("#ff00cc")
     for waves in range(l):
         for turns in range(180):
@@ -15,13 +13,13 @@ def pinkWave(l):
             left(1)
 
 def purpleStraightLine(l):
-    "Draws a purple straight line. Args: Length of line."
+    """Draws a purple straight line. Args: Length of line."""
     pencolor("#cc00ff")
     for pixels in range(l):
         forward(1)
 
 def turquoiseDiamond(s):
-    "Draws a turquoise diamond. Args: Size of diamond, s=length of one side."
+    """Draws a turquoise diamond. Args: Size of diamond, s=length of one side."""
     pencolor("#00ccff")
     forward(s)
     right(150)
@@ -32,8 +30,8 @@ def turquoiseDiamond(s):
     forward(s)
 
 def blackZigZag(l):
-    "Draws a black zigzag. Args: Number of iterations of zigzag."
-    pencolor("#000000") #Color untested
+    """Draws a black zigzag. Args: Number of iterations of zigzag."""
+    pencolor("#000000")
     for zees in range(l):
         forward(12)
         right(143) #Approx sin^-1 (9/15)
@@ -42,9 +40,9 @@ def blackZigZag(l):
         forward(12)
 
 hideturtle()
-for lines in range(50):
-    pinkWave(randint(1,6))
-    purpleStraightLine(randint(1,200))
+for lines in range(25):
+    pinkWave(randint(1,4))
+    purpleStraightLine(randint(1,250))
     right(randint(30,270))
     turquoiseDiamond(randint(1,50))
     blackZigZag(randint(1,10))
